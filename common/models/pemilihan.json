@@ -1,0 +1,30 @@
+{
+  "name": "Pemilihan",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "status": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "tahunPelajaran": {
+      "type": "date",
+      "required": true,
+      "defaultFn": "now"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "pemilihanKandidats": {
+      "type": "hasMany",
+      "model": "PemilihanKandidat",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

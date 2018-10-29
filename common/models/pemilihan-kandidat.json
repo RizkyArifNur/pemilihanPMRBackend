@@ -1,0 +1,33 @@
+{
+  "name": "PemilihanKandidat",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "jumlahPemilihan": {
+      "type": "number",
+      "required": true
+    },
+    "nomorKandidat": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "kandidat": {
+      "type": "belongsTo",
+      "model": "Kandidat",
+      "foreignKey": ""
+    },
+    "pemilihan": {
+      "type": "belongsTo",
+      "model": "Pemilihan",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

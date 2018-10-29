@@ -14,7 +14,8 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "db",
+    "public":false
   },
   "AccessToken": {
     "dataSource": "db",
@@ -34,5 +35,21 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "People": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Kandidat": {
+    "dataSource": "db",
+    "public": true
+  },
+  "PemilihanKandidat": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Pemilihan": {
+    "dataSource": "db",
+    "public": true
   }
 }

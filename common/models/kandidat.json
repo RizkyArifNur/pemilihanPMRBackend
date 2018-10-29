@@ -1,0 +1,37 @@
+{
+  "name": "Kandidat",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nama": {
+      "type": "string",
+      "required": true
+    },
+    "kelas": {
+      "type": "string",
+      "required": true
+    },
+    "visi": {
+      "type": "string"
+    },
+    "misi": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "pemilihanKandidats": {
+      "type": "hasMany",
+      "model": "PemilihanKandidat",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
