@@ -1,6 +1,12 @@
 {
   "db": {
+    "host": "cluster0-dixld.mongodb.net",
+    "port": 0,
+    "url": "mongodb+srv://kti:123@cluster0-dixld.mongodb.net/test?retryWrites=true",
+    "database": "test",
+    "password": "123",
     "name": "db",
-    "connector": "memory"
+    "user": "kti",
+    "connector": "mongodb"
   }
 }
